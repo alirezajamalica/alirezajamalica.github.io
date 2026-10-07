@@ -16,7 +16,7 @@ The AJ monogram is defined in HeroSection.tsx. Project cards can return to the o
 
 ## Hosting
 
-GitHub Pages deployment is not configured yet. The intended site address is https://alirezajamalica.github.io.
+GitHub Actions builds a static export and deploys it to GitHub Pages on pushes to master. Select GitHub Actions as the Pages source in repository settings. The site address is https://alirezajamalica.github.io.
 
 ## Attribution
 
