@@ -1,176 +1,161 @@
 {
-  "__documentationComment": "Portfolio JSON Template - A structured data format for personal portfolio websites.",
-
   "basics": {
-    "__comment": "Core information about you displayed in hero section and metadata",
-    "name": "YOUR NAME",
-    "title": "Your Professional Title",
+    "name": "Ali Jamali",
+    "title": "Data Analyst | Data Administrator | SQL & Reporting",
     "summaries": [
-      "First paragraph of your professional summary. Include years of experience, main areas of expertise, and key specialties.",
-      "Second paragraph highlighting additional strengths, methodologies, and what makes you unique."
+      "IT professional based in Metro Vancouver, BC, with extensive experience in healthcare data, SQL Server, reporting and technology support.",
+      "I help teams organize complex information, investigate data issues and build reliable reporting environments. My work includes centralized data and KPIs across approximately 20–25 hospitals."
     ],
     "profileImage": "/profile.png",
-    "resumeUrl": "/Your_Name_CV.pdf",
-    "metaDescription": "SEO description for your portfolio page, 150-160 characters recommended."
+    "resumeUrl": "/resume.pdf",
+    "metaDescription": "Ali Jamali: healthcare data, SQL Server, reporting and IT professional in Metro Vancouver, BC. Explore experience, projects, skills and certifications."
   },
-
   "about": {
-    "__comment": "Detailed paragraphs about your background, approach and personal qualities",
     "paragraphs": [
-      "First paragraph about your professional background and approach.",
-      "Second paragraph detailing your technical expertise and notable achievements.",
-      "Third paragraph about personal qualities, languages, or other relevant information."
+      "My background combines data administration, SQL reporting, healthcare applications and hands-on IT support. I have worked with hospital information systems, database migrations, integrations and operational reporting in healthcare environments.",
+      "I bring an analytical and methodical approach to investigating inconsistencies, validating information and resolving database and application issues. Accuracy, documentation and clear communication with users and technical teams are central to how I work.",
+      "Based in Metro Vancouver, BC, I am seeking opportunities in data analysis, data administration, database support, reporting and related roles. I continue learning Microsoft Power BI, Azure database administration and Microsoft Fabric/data topics."
     ]
   },
-
   "experience": [
     {
-      "__comment": "Listed in reverse chronological order (most recent first)",
-      "company": "Company Name",
-      "position": "Your Job Title",
-      "period": "Month Year - Month Year",
+      "company": "Dian Computer Services · Coquitlam, BC",
+      "position": "IT Specialist (Project-Based)",
+      "period": "2023–Present",
       "responsibilities": [
-        "Key achievement or responsibility with measurable results",
-        "Technical implementation or project you completed",
-        "Leadership role or initiative you spearheaded",
-        "Add 3-7 bullet points per position"
+        "Provide project-based IT support for computer systems, software and user technical issues.",
+        "Install, configure and troubleshoot Windows systems, applications and network connectivity.",
+        "Support data backup, recovery, file management and system maintenance.",
+        "Diagnose hardware, software and performance issues and recommend appropriate solutions.",
+        "Assist clients with system setup, updates, security and general technical support.",
+        "Document technical issues, completed work and solutions for follow-up."
       ]
     },
     {
-      "company": "Previous Company Name",
-      "position": "Previous Job Title",
-      "period": "Month Year - Month Year",
+      "company": "Shahid Beheshti University of Medical Sciences · Iran",
+      "position": "Software Developer — Data & SQL",
+      "period": "2021–2023",
       "responsibilities": [
-        "Notable responsibility or achievement",
-        "Projects or technologies you worked with",
-        "Keep descriptions action-oriented and results-focused"
+        "Supported SQL Server and T-SQL data environments across approximately 20–25 hospitals.",
+        "Extracted, consolidated and validated data to support data quality and reporting accuracy.",
+        "Developed T-SQL queries, reporting datasets and healthcare KPIs.",
+        "Supported data processing, SQL troubleshooting and performance review.",
+        "Developed a C# application used by approximately 20 hospitals for physician compensation processing.",
+        "Collaborated with hospital and technical teams to resolve data issues."
+      ]
+    },
+    {
+      "company": "Mofid Children's Hospital · Iran",
+      "position": "Healthcare Software & Data Systems Specialist",
+      "period": "2013–2021",
+      "responsibilities": [
+        "Supported SQL Server databases and HIS applications in a busy healthcare environment.",
+        "Developed T-SQL queries, stored procedures, functions and Crystal Reports.",
+        "Investigated database, application, data-processing and performance issues.",
+        "Performed data validation, report troubleshooting and database support.",
+        "Supported SQL Server backup, recovery and system continuity.",
+        "Developed C# healthcare applications, integrations and data interfaces."
+      ]
+    },
+    {
+      "company": "TrTCo / Tiraj Healthcare Software Co. · Iran",
+      "position": "Hospital Information System Support Specialist",
+      "period": "2008–2013",
+      "responsibilities": [
+        "Implemented and supported SQL Server-based hospital systems across multiple sites.",
+        "Migrated and validated legacy hospital data using staging, mapping and cleansing.",
+        "Created clinical, financial, operational and management reports using T-SQL and Crystal Reports.",
+        "Provided remote and onsite database/application support and coordinated issue resolution."
+      ]
+    },
+    {
+      "company": "Mahdieh Hospital · Iran",
+      "position": "IT Specialist",
+      "period": "2006–2008",
+      "responsibilities": [
+        "Supported SQL Server data, queries and SAP Crystal Reports.",
+        "Provided hospital IT/application support and coordinated data and system issues with HIS vendors."
       ]
     }
   ],
-
   "projects": [
     {
-      "__comment": "Featured projects with visual and technical details",
-      "name": "Project Name 1",
-      "image": "/projects/project1.png",
+      "name": "Multi-Hospital Data",
+      "title": "Centralized Multi-Hospital Data Environment",
+      "description": "Aggregated, validated and prepared reporting data and KPIs across approximately 20–25 hospitals to support centralized processing and management reporting.",
+      "features": ["Extracted and consolidated hospital data.", "Validated information for reporting and data quality.", "Prepared reporting datasets and healthcare KPIs."],
+      "technologies": ["SQL Server", "T-SQL", "Data Validation", "Healthcare KPIs"],
+      "image": "",
       "color": "from-blue-500 to-blue-600",
-      "title": "Descriptive Project Title",
-      "description": "One concise paragraph explaining the project's purpose and your role.",
-      "features": [
-        "Key technical feature you implemented",
-        "Architecture or design choice you made",
-        "Problem you solved or optimization you achieved",
-        "User experience improvement you delivered"
-      ],
-      "technologies": [
-        "Primary Language",
-        "Framework",
-        "Database",
-        "Notable Libraries/Tools",
-        "Architecture Pattern"
-      ],
-      "link": "https://project-url.com",
-      "github": "https://github.com/username/project",
       "hasDetailPage": false
     },
     {
-      "__comment": "Featured projects with visual and technical details",
-      "name": "Project Name 2",
-      "image": null,
+      "name": "HIS Data Migration",
+      "title": "Legacy Hospital Data Migration",
+      "description": "Migrated legacy hospital data into HIS environments through a structured preparation and verification process.",
+      "features": ["Staged and mapped legacy data.", "Cleansed, transformed and normalized characters.", "Validated data and supported cutover and post-migration verification."],
+      "technologies": ["SQL Server", "T-SQL", "Data Migration", "Data Integrity"],
+      "image": "",
       "color": "from-green-500 to-green-600",
-      "title": "Descriptive Project Title",
-      "description": "One concise paragraph explaining the project's purpose and your role.",
-      "features": [
-        "Key technical feature you implemented",
-        "Architecture or design choice you made",
-        "Problem you solved or optimization you achieved",
-        "User experience improvement you delivered"
-      ],
-      "technologies": [
-        "Primary Language",
-        "Framework",
-        "Database",
-        "Notable Libraries/Tools",
-        "Architecture Pattern"
-      ],
-      "link": "https://project-url.com",
-      "github": "https://github.com/username/project",
+      "hasDetailPage": false
+    },
+    {
+      "name": "Physician Compensation",
+      "title": "Physician Compensation System",
+      "description": "Built a C# and SQL Server application for physician compensation processing and reporting across approximately 20 hospitals.",
+      "features": ["Processed physician service data.", "Applied business rules and calculated payments.", "Supported compensation reporting."],
+      "technologies": ["C#", "SQL Server", "Crystal Reports"],
+      "image": "",
+      "color": "from-blue-500 to-blue-600",
+      "hasDetailPage": false
+    },
+    {
+      "name": "Laboratory Integration",
+      "title": "Laboratory Information System Integration",
+      "description": "Developed an interface between hospital information systems and laboratory systems.",
+      "features": ["Exchanged laboratory worklists.", "Received laboratory results.", "Validated returned data."],
+      "technologies": ["C#", "SQL Server", "HIS", "System Integration"],
+      "image": "",
+      "color": "from-green-500 to-green-600",
+      "hasDetailPage": false
+    },
+    {
+      "name": "Service Integration",
+      "title": "API / Windows Service Integration",
+      "description": "Developed services and integrations to receive external data, process it and store the results in SQL Server.",
+      "features": ["Received external data through integrations.", "Validated and processed incoming information.", "Stored processed results in SQL Server."],
+      "technologies": ["C#", "Windows Services", "REST APIs", "SQL Server"],
+      "image": "",
+      "color": "from-blue-500 to-blue-600",
       "hasDetailPage": false
     }
   ],
-
   "skills": [
-    {
-      "__comment": "Grouped skills by category",
-      "category": "Programming Languages & Frameworks",
-      "items": ["Language 1", "Language 2", "Framework 1", "Framework 2"]
-    },
-    {
-      "category": "Category Name (e.g., Databases)",
-      "items": ["Skill 1", "Skill 2", "Skill 3"]
-    }
+    {"category": "SQL & Database Administration", "items": ["Microsoft SQL Server", "SSMS", "T-SQL", "Stored Procedures & Functions", "SQL Server Agent", "Backup & Restore", "Indexing & Performance Troubleshooting"]},
+    {"category": "Data & Reporting", "items": ["Data Extraction", "Cleansing & Validation", "Reconciliation & Transformation", "Migration & Data Integrity", "Reporting Datasets", "Healthcare KPIs", "SAP Crystal Reports", "Operational & Financial Reporting"]},
+    {"category": "Application Development & Integration", "items": ["C#", "Windows Forms", "Entity Framework", "Windows Services", "REST / API Integration"]},
+    {"category": "Systems & IT Support", "items": ["Windows Server", "Active Directory", "VMware ESXi", "Veeam Backup", "TCP/IP", "Windows Troubleshooting", "User Support"]},
+    {"category": "Core Skills", "items": ["Analytical Problem-Solving", "Attention to Detail & Data Quality", "Information Organization", "Issue Investigation", "Documentation & Record Management", "Requirements Interpretation", "Technical Communication", "Teamwork & Adaptability", "Time Management", "User Guidance & Training"]}
   ],
-
   "education": [
-    {
-      "__comment": "Formal education and certifications",
-      "degree": "Degree Name",
-      "institution": "University or Institution Name",
-      "period": "Year - Year",
-      "description": "Brief description of specialization or notable achievements"
-    }
+    {"degree": "Microsoft Certified: Azure Data Fundamentals (DP-900)", "institution": "Microsoft · Vancouver, BC", "period": "2026", "description": "Azure Data Fundamentals certification."},
+    {"degree": "Discovering SAP Crystal Reports", "institution": "SAP · Vancouver, BC", "period": "2025", "description": "Professional learning in SAP Crystal Reports."},
+    {"degree": "Bachelor of Science in Information Technology", "institution": "University of Applied Science and Technology · Iran", "period": "2015", "description": "Bachelor's degree in Information Technology."},
+    {"degree": "Professional Development", "institution": "Continued Learning", "period": "Ongoing", "description": "Microsoft Power BI; Microsoft data and database administration, including the Azure Database Administration pathway and Microsoft Fabric/data topics."}
   ],
-
   "contact": {
-    "__comment": "Contact information and social media profiles",
-    "email": "your.email@example.com",
-    "phone": "+X XXX XXX XXXX",
-    "socialLinks": {
-      "__comment": "Social media links for professional networking (optional - any link can be omitted)",
-      "github": "https://github.com/yourusername",
-      "linkedin": "https://linkedin.com/in/yourusername",
-      "telegram": "https://t.me/yourusername",
-      "whatsapp": "https://wa.me/yourphonenumber"
-    }
+    "email": "alirezajamali.ca@gmail.com",
+    "phone": "1 778 908 6218",
+    "socialLinks": {"github": "https://github.com/alirezajamalica", "linkedin": "https://www.linkedin.com/in/alireza-jamalisouldaragh-8015a4273", "telegram": "https://t.me/+17789086218", "whatsapp": "https://wa.me/17789086218"}
   },
-
   "navigation": [
-    {
-      "__comment": "Navigation items in the order they should appear in the menu",
-      "name": "About",
-      "href": "#about"
-    },
-    {
-      "name": "Experience",
-      "href": "#experience"
-    },
-    {
-      "name": "Projects",
-      "href": "#projects"
-    },
-    {
-      "name": "Skills",
-      "href": "#skills"
-    },
-    {
-      "name": "Education",
-      "href": "#education"
-    },
-    {
-      "name": "Contact",
-      "href": "#contact"
-    }
+    {"name": "About", "href": "#about"},
+    {"name": "Experience", "href": "#experience"},
+    {"name": "Projects", "href": "#projects"},
+    {"name": "Skills", "href": "#skills"},
+    {"name": "Education", "href": "#education"},
+    {"name": "Contact", "href": "#contact"}
   ],
-
-  "footer": {
-    "__comment": "Footer information with a {year} placeholder for dynamic year",
-    "copyright": "© {year} YOUR NAME. All rights reserved."
-  },
-
-  "siteConfig": {
-    "__comment": "Optional site-wide configuration",
-    "accentColor": "blue",
-    "darkModeDefault": false,
-    "analyticsId": "G-XXXXXXXXXX"
-  }
+  "footer": {"copyright": "© {year} Ali Jamali. All rights reserved."},
+  "siteConfig": {"accentColor": "blue", "darkModeDefault": false, "analyticsId": "", "projectCardStyle": "refined"}
 }

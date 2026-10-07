@@ -6,37 +6,28 @@ import { getProfileSection } from "@/utils/profileData";
 const basics = getProfileSection("basics");
 
 export const metadata: Metadata = {
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   title: {
     template: `%s | ${basics.name}`,
     default: `${basics.name} - ${basics.title}`,
   },
   description: basics.metaDescription,
-  keywords: ["developer", "portfolio", "full stack", "engineer"],
+  keywords: ["Ali Jamali", "SQL Server", "data analyst", "data administration", "healthcare reporting", "IT support", "Metro Vancouver"],
   authors: [{ name: basics.name }],
   creator: basics.name,
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://alirezajamalica.github.io"),
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://example.com",
+    locale: "en_CA",
+    url: "https://alirezajamalica.github.io",
     siteName: `${basics.name} - Portfolio`,
     title: `${basics.name} - ${basics.title}`,
     description: basics.metaDescription,
-    images: [
-      {
-        url: "https://example.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: `${basics.name} - Portfolio`,
-      },
-    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: `${basics.name} - ${basics.title}`,
     description: basics.metaDescription,
-    images: ["https://kimsengduong.com/og-image.jpg"],
-    creator: "@yourtwitter",
   },
   robots: {
     index: true,
@@ -50,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://kimsengduong.com",
+    canonical: "https://alirezajamalica.github.io",
   },
 };
 

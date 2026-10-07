@@ -3,6 +3,14 @@ import Image from "next/image";
 
 export default function ProjectsSection() {
   const projects = getProfileSection("projects");
+  const refined = getProfileSection("siteConfig").projectCardStyle === "refined";
+  const iconPaths = [
+    "M4 6c0-2 16-2 16 0s-16 2-16 0m0 0v12c0 3 16 3 16 0V6M4 12c0 3 16 3 16 0",
+    "M4 7h13m-4-4 4 4-4 4M20 17H7m4-4-4 4 4 4",
+    "M7 3h10v18H7zM10 7h4M10 11h4M10 15h1m3 0h1",
+    "M9 3h6m-5 0v6l-5 9c-1 2 0 3 2 3h10c2 0 3-1 2-3l-5-9V3M8 15h8",
+    "M8 5 2 12l6 7m8-14 6 7-6 7m-3-15-2 16",
+  ];
 
   if (!projects || projects.length === 0) {
     return null; // Return null if no projects are found
@@ -15,17 +23,29 @@ export default function ProjectsSection() {
           Projects & Achievements
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {projects.map((project) => {
+          {projects.map((project, projectIndex) => {
             // Check for image property
             const hasImage = !!project.image;
 
             return (
               <div
                 key={project.name}
-                className="rounded-lg overflow-hidden shadow-md bg-white dark:bg-neutral-800 transition-transform hover:scale-[1.02]"
+                className={refined ? "project-card-refined overflow-hidden rounded-2xl bg-white dark:bg-neutral-800" : "rounded-lg overflow-hidden shadow-md bg-white dark:bg-neutral-800 transition-transform hover:scale-[1.02]"}
               >
                 {/* Project header with image if available, otherwise gradient with name */}
-                <div
+                {refined && !hasImage ? (
+                  <div className="project-card-heading">
+                    <div className="project-card-icon">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d={iconPaths[projectIndex % iconPaths.length]} />
+                      </svg>
+                    </div>
+                    <div className="project-card-heading-text">
+                      <p className="project-card-label">SELECTED PROJECT</p>
+                      <p className="project-card-name font-semibold text-gray-800 dark:text-gray-100">{project.name}</p>
+                    </div>
+                  </div>
+                ) : <div
                   className={`h-48 ${
                     !hasImage ? `bg-gradient-to-r ${project.color}` : ""
                   } flex items-center justify-center text-white text-xl font-bold`}
@@ -41,9 +61,9 @@ export default function ProjectsSection() {
                   ) : (
                     project.name
                   )}
-                </div>
+                </div>}
 
-                <div className="p-6">
+                <div className={refined ? "project-card-body" : "p-6"}>
                   {/* Project title */}
                   <h3 className="mb-2 text-xl font-semibold">
                     {project.title}

@@ -10,10 +10,10 @@ export default function ContactSection() {
         <h2 className="mb-12 text-3xl font-bold text-center">Get In Touch</h2>
         <div className="max-w-md mx-auto">
           <p className="mb-8 text-center">
-            {`Let's build something amazing together! I specialize in full stack
-            engineering, system architecture, and AI development. Whether you have
-            a project idea, technical questions, or just want to connect, I'd love
-            to hear from you.`}
+            Based in Metro Vancouver, BC, I welcome opportunities in data analysis,
+            data administration, database support, reporting and IT support.
+            Get in touch to discuss how my healthcare data and technology
+            experience can support your team.
           </p>
           <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
             <a

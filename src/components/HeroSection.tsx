@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getProfileSection } from "@/utils/profileData";
 
 export default function HeroSection() {
@@ -31,17 +30,18 @@ export default function HeroSection() {
             ))}
         </div>
 
-        {/* Photo */}
+        {/* Personal monogram */}
         <div className="flex justify-center lg:w-2/5">
-          <div className="relative w-64 h-64 overflow-hidden border-4 border-white rounded-full shadow-lg md:w-80 md:h-80 dark:border-gray-800">
-            <Image
-              src={basics.profileImage}
-              alt={basics.name}
-              fill
-              sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
-              className="object-cover"
-              priority
-            />
+          <div className="personal-monogram" role="img" aria-label="Ali Jamali monogram">
+            <svg className="monogram-network" viewBox="0 0 320 320" aria-hidden="true">
+              <path d="M48 104 L104 48 L216 48 L272 104 L272 216 L216 272 L104 272 L48 216 Z" />
+              <path d="M48 104 L104 160 L48 216 M272 104 L216 160 L272 216" />
+              {[ [48,104], [104,48], [216,48], [272,104], [272,216], [216,272], [104,272], [48,216] ].map(([cx,cy], index) => (
+                <circle key={index} cx={cx} cy={cy} r="5" />
+              ))}
+            </svg>
+            <span className="monogram-letters" aria-hidden="true">AJ</span>
+            <span className="monogram-caption" aria-hidden="true">DATA · SYSTEMS · IT</span>
           </div>
         </div>
       </div>
